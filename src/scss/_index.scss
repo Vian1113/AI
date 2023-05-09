@@ -1,0 +1,16 @@
+.card{
+    width: 416px;
+
+    .imgWrap{
+        overflow: hidden;
+
+    }
+    .cardImg{
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+        
+    }
+}
+
