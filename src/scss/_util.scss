@@ -2,6 +2,69 @@
     font-weight: 700;
 }
 
+.fs-0{
+    font-size: 0;
+}
+
+.min-w-3{
+    min-width: 3rem;
+}
+
+.h-3{
+    height: 3rem;
+}
+
+
+
+.py-28{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.py-120{
+    padding-top:7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.gap-4-1{
+    gap:1.25rem;
+}
+
+
 .round-top{
     border-radius: 1rem 1rem 0 0;
+}
+
+.round-rg{
+    border-radius: 1rem;
+}
+
+.round-bg{
+    border-radius:1.25rem;
+    @include large{
+        border-radius: 10rem;
+    }
+    
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.position-md-absolute{
+    @include large{
+        position: absolute;
+    }
+
+}
+
+.translate-middle-md-y{
+    @include large{
+        transform: translateY(-50%) !important;
+    }
+}
+
+
+.moreBtn:hover{
+    background: $gray-800 !important;
 }

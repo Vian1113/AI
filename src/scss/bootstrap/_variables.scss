@@ -10,7 +10,7 @@ $gray-200: #F2F2F2 !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #919191 !default; //Black / 60
 $gray-700: #495057 !default;
 $gray-800: #525252 !default; //Black / 80
 $gray-900: #212529 !default;
@@ -71,9 +71,10 @@ $theme-colors: (
     "info" : $info, 
     "warning" : $warning, 
     "danger" : $danger, 
-    "light" : $light, 
-    "light-gray" : $light-gray,
-    "dark" : $dark) !default;
+    "light" : $light,  //#525252
+    "light-gray" : $light-gray, //#F2F2F2
+    "dark" : $dark //#020202
+    ) !default;
 // scss-docs-end theme-colors-map
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
@@ -218,6 +219,10 @@ $spacers: (
     6: $spacer * 2, //32px
     7: $spacer * 2.5, //40px
     8: $spacer * 3, //48px
+    9: $spacer *3.75, //60px
+    10: $spacer *5,//80px
+    11: $spacer *10,//160px
+    12: $spacer *11.25,//180px
     ) !default;
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
 // scss-docs-end spacer-variables-maps
