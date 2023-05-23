@@ -1,7 +1,5 @@
 $(document).ready(function () {
-    $(".filterBtn").click(function () {
-        $(this).toggleClass("active");
-    });
+   
 
     // 篩選swiper
     function filter(){
@@ -75,11 +73,40 @@ $(document).ready(function () {
         });
     }
 
+    
     filter();
     partner();
     comment();
 
-   
+    // 篩選按鈕
+    $(".filterBtn").click(function () {
+        $(this).toggleClass("active");
+    });
+    
+    //常見問題
+    $(".faqContent").click(function (e) {
+        let x = $(this).find(".detailWrap");
+        if (x.css("display") == "none") {
+            x.slideDown();
+            $(this).find("img").attr("src","./src/img/dash.png")
+        } else {
+            x.slideUp();
+            $(this).find("img").attr("src","./src/img/plus.png")
+        };
+        
+    });
+
+    //回到最上方
+    $(".toTop").click(function(e){
+        e.preventDefalut();
+        $("html,body").animate(
+            {
+                scrollTop: 0,
+            },
+            450
+        )
+    })
+
 
 
 });

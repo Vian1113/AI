@@ -1,0 +1,24 @@
+
+.banner{
+    margin-bottom: 258px;
+    @include large{
+        margin-bottom: 238px;
+    }
+
+    .subtitle{
+        margin-top:4rem ;
+    }
+}
+
+.priceDetail{
+    .detail{
+        padding-bottom: 140px;
+    }
+}
+
+.terms{
+    .detailWrap{
+        display: none;
+    }
+}
+

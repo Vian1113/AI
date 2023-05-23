@@ -1,3 +1,7 @@
+header{
+    z-index:200;
+}
+
 .solgan {
     @include large {
         margin-bottom: 100px !important;
